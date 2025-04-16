@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--cor_principal);
+}
+
+:root {
+    /* CORES BACKGROUND*/
+    --cor_principal: #0b1d22;
+
+    /* CORES FONTE */
+    --cor_principal_fone: white;
+
+    /* TAMANHO FONTES */
+    /* TAMANHO PC */
+
+    --icones_medios: 40px;
+
+    --titulos_grandes: 25px;
+    --titulos_medios: 15px;
+
+    
+
+    /* FONTE NEGRITO */
+    --negrito_medio: 600;
+}
+
+/* ----- NAVEGACAO ----- */
+
+nav {
+    width: 100%;
+    height: 60px;
+
+    background-color: var(--cor_principal);
+
+    color: var(--cor_principal_fone);
+
+    padding: 0px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & * {
+        display: flex;
+        cursor: pointer;
+    }
+
+
+    & .nav_icones {
+        gap: 30px;
+        font-size: var(--icones_medios);
+
+        & img {
+            width: var(--icones_medios);
+        }
+    }
+
+    & .nav_opcoes {
+        gap: 20px;
+        font-size: var(--titulos_medios);
+
+    }
+}
+
+/* ----- BANNER ----- */
+
+header {
+    
+
+    & img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    & h2 {
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: var(--titulos_grandes);
+        font-weight: var(--negrito_medio);
+    }
+}

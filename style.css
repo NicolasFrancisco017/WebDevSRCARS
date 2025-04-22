@@ -6,10 +6,15 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    cursor: default;
 }
 
 body {
     background-color: var(--cor_principal);
+}
+
+main {
+    padding: 0 50px;
 }
 
 :root {
@@ -31,11 +36,18 @@ body {
 
     /* FONTE NEGRITO */
     --negrito_medio: 600;
+
+
+    /* TAMANHO DOS DESTAQUES */
+    --tam_dest:500px;
+    
+    /* animacao */
+    --anim_botao: scale: 1.13; ;
 }
 
 /* ----- NAVEGACAO ----- */
 
-nav {
+.navegacao {
     width: 100%;
     height: 60px;
 
@@ -61,6 +73,14 @@ nav {
 
         & img {
             width: var(--icones_medios);
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
+        & i:hover {
+            scale: 1.1;
         }
     }
 
@@ -68,25 +88,46 @@ nav {
         gap: 20px;
         font-size: var(--titulos_medios);
 
+        & h1:hover {
+            scale: 1.13;
+            transition: 0.1s;
+        }
     }
 }
 
 /* ----- BANNER ----- */
 
-header {
-    
+.destaque {
+    width: 100%;
+
+    position: relative;
+
 
     & img {
         width: 100%;
         object-fit: contain;
+        position: relative;
     }
 
     & h2 {
         color: white;
         position: absolute;
-        top: 100px;
-        left: 40px;
-        font-size: var(--titulos_grandes);
+        top: 2.5%;
+        left: 2%;
+        font-size: clamp(var(--titulos_medios), 2vw, var(--titulos_grandes));
         font-weight: var(--negrito_medio);
     }
+}
+
+.destaques {
+    /* teste */
+}
+
+.teste {
+    position: absolute;
+
+    width: 100%; 
+    height: 100px; 
+    background-color: antiquewhite; 
+    z-index: 2;
 }

@@ -1,0 +1,23 @@
+
+
+main {
+    width: 85vw;
+    height: 80vh;
+    background-color: aliceblue;
+    margin: 2% 7.5%;
+    border-radius: 50px;
+
+    & hr {
+        border-width: 2px;
+    }
+
+    & h1 {
+        margin-left: 25px;
+    }
+
+    & #faq-titulo {
+        width: 410px;
+        margin-left: 15px;
+    }
+}
+

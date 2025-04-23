@@ -39,7 +39,7 @@ main {
 
 
     /* TAMANHO DOS DESTAQUES */
-    --tam_dest:500px;
+    --tam_dest: 460px;
     
     /* animacao */
     --anim_botao: scale: 1.13; ;
@@ -97,37 +97,74 @@ main {
 
 /* ----- BANNER ----- */
 
-.destaque {
+.destaques {
     width: 100%;
+    height: var(--tam_dest);
 
     position: relative;
 
 
     & img {
         width: 100%;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
         position: relative;
     }
 
-    & h2 {
+    & .opcoes_destaques {
+        height: 50PX;
+        width: 100%;
+
+        padding: 0 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: absolute;
+        z-index: 2;
+
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        /* background-color: rebeccapurple; */
+
+        & i {
+            font-size: 50px;
+            cursor: pointer;
+        }
+    }
+
+    /* & h2 {
         color: white;
         position: absolute;
         top: 2.5%;
         left: 2%;
         font-size: clamp(var(--titulos_medios), 2vw, var(--titulos_grandes));
         font-weight: var(--negrito_medio);
-    }
+    } */
 }
 
-.destaques {
+.conteudo {
     /* teste */
+    position: relative;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
 }
 
-.teste {
+.pesquisa {
+    margin-top: calc(var(--tam_dest) - 8%);
     position: absolute;
 
-    width: 100%; 
-    height: 100px; 
-    background-color: antiquewhite; 
+    width: 65%; 
+    height: 180px; 
+
+    background-color: white; 
+
+    border-radius: 30px;
     z-index: 2;
 }

@@ -171,6 +171,30 @@ a {
     }
 }
 
+/* ----- BOTÃO "CRIAR CONTA" ----- */
+.criar-conta {
+    text-align: center;
+}
+
+.botao-criar-conta {
+    display: inline-block;
+    padding: var(--padding-botao);
+    font-size: var(--botao-font-tamanho);
+    background-color: var(--cor-botao);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius-botao);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.botao-criar-conta:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+
 /* ----- RESPONSIVIDADE ----- */
 @media (max-width: 768px) {
     #container-login {

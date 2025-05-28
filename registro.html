@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./registro.css">
+        <title>Registro - SRCARS</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <nav class="navegacao">
+        <div class="nav_icones">
+            <img src="img/logo.png" alt="logo_pagina">
+            <i class='bx bxs-help-circle' >
+                <!-- ICONE DUVIDAS -->
+            </i>
+        </div>
+        <div class="nav_opcoes">
+            <h1>Carros</h1>
+            <h1>Vender</h1>
+            <h1>Serviços</h1>
+            <h1>Ajuda</h1>
+        </div>
+        <div class="nav_icones">
+            <i class='bx bx-cart'>
+                <!-- ICONE CARRINHO MERCADo -->
+            </i>
+            <i class='bx bxs-user-circle' >
+                <!-- ICONE USUARIO -->
+            </i>
+        </div>
+    </nav>
+    <body>
+        <main id="container-registro">
+            <h1 class="titulo-registro">REGISTRO</h1>
+            <div class="container-campo">
+                <div class="rotulo" id="rotulo-nome">Nome Completo</div>
+                <input class="entrada-cadastro" id="entrada-nome" type="text" placeholder="Digite seu nome completo">
+            </div>
+            <div class="container-campo">
+                <div class="rotulo" id="rotulo-email">E-mail</div>
+                <input class="entrada-cadastro" id="entrada-email" type="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="container-campo">
+                <div class="rotulo" id="rotulo-senha">Senha</div>
+                <input class="entrada-cadastro" id="entrada-senha" type="password" placeholder="Digite sua senha">
+            </div>
+            <div class="container-campo">
+                <div class="rotulo" id="rotulo-confirmar-senha">Confirmar Senha</div>
+                <input class="entrada-cadastro" id="entrada-confirmar-senha" type="password" placeholder="Confirme sua senha">
+            </div>
+            <a href="./login.html" class="botao-registro" id="botao-registro">CADASTRAR</a>
+            <div class="registro-social">
+                <p class="titulo-social">REGISTRAR COM:</p>
+                <img class="icone-social" id="icone-google" src="./img/google_logo.png" alt="Ícone Google">
+                <img class="icone-social" id="icone-facebook" src="./img/Facebook_Logo_2023.png" alt="Ícone Facebook">
+            </div>
+            <div class="ja-login">
+                <a href="./login.html" class="botao-ja-login">Já tem login?</a>
+            </div>
+        </main>
+    </body>
+</html>

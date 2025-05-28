@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+/* ----- GLOBAIS ----- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    cursor: default;
+}
+
+:root {
+    /* ----- CORES ----- */
+    --cor-fundo: #f0f0f0;
+    --cor-container: #e0e0e0;
+    --cor-rotulo: #0b1d22;
+    --cor-texto: #333;
+    --cor-botao: #333;
+    --cor-botao-hover: #555;
+
+    /* ----- TAMANHOS E ESPAÇAMENTOS ----- */
+    --largura-container: 80%;
+    --max-largura-container: 800px;
+    --min-altura-container: 80vh;
+    --espacamento-container: 40px;
+    --border-radius-container: 15px;
+    --box-shadow-container: 0 0 30px rgba(0, 0, 0, 0.2);
+
+    --titulo-login-tamanho: 48px;
+    --mb: 30px;
+    --mb-pequeno: 10px;
+
+    --rotulo-tamanho: 28px;
+    --rotulo-max-largura: 110px;
+    --padding-rotulo: 5px 10px;
+
+    --entrada-font-tamanho: 24px;
+    --padding-entrada: 20px;
+    --border-entrada: 2px solid #ccc;
+    --border-radius-entrada: 10px;
+
+    --checkbox-dim: 20px;
+    --margem-checkbox: 10px;
+    --fonte-pequena: 18px;
+
+    --botao-font-tamanho: 24px;
+    --padding-botao: 20px;
+    --border-radius-botao: 10px;
+
+    --titulo-social-tamanho: 26px;
+    --margem-social-titulo: 20px;
+
+    --icone-dim: 60px;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- ESTILOS GLOBAIS DE ÂNCORA ----- */
+a {
+    text-decoration: none;
+    color: var(--cor-container);
+}
+
+/* ----- CONTAINER DE LOGIN ----- */
+#container-login {
+    width: var(--largura-container);
+    max-width: var(--max-largura-container);
+    min-height: var(--min-altura-container);
+    margin: 40px auto;
+    padding: var(--espacamento-container);
+    background-color: var(--cor-container);
+    border-radius: var(--border-radius-container);
+    box-shadow: var(--box-shadow-container);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* ----- TÍTULO DE LOGIN ----- */
+    .titulo-login {
+        text-align: center;
+        color: var(--cor-texto);
+        font-size: var(--titulo-login-tamanho);
+        margin-bottom: var(--mb);
+    }
+
+    /* ----- CAMPOS DO FORMULÁRIO ----- */
+    .container-rotulo {
+        margin-bottom: var(--mb);
+
+        .rotulo {
+            font-size: var(--rotulo-tamanho);
+            color: #fff;
+            background-color: var(--cor-rotulo);
+            max-width: var(--rotulo-max-largura);
+            border-radius: 6px;
+            padding: var(--padding-rotulo);
+            margin-bottom: var(--mb-pequeno);
+            font-weight: bold;
+        }
+
+        .entrada-login {
+            width: 100%;
+            padding: var(--padding-entrada);
+            font-size: var(--entrada-font-tamanho);
+            border: var(--border-entrada);
+            border-radius: var(--border-radius-entrada);
+            margin-bottom: var(--mb);
+        }
+    }
+
+    /* ----- OPÇÃO LEMBRETE ----- */
+    .opcao-lembrete {
+        display: flex;
+        align-items: center;
+        font-size: var(--fonte-pequena);
+        color: var(--cor-texto);
+        margin-bottom: var(--mb);
+
+        input[type="checkbox"] {
+            width: var(--checkbox-dim);
+            height: var(--checkbox-dim);
+            margin-right: var(--margem-checkbox);
+        }
+    }
+
+    /* ----- BOTÃO DE LOGIN ----- */
+    .botao-login {
+        display: block;
+        width: 100%;
+        padding: var(--padding-botao);
+        font-size: var(--botao-font-tamanho);
+        background-color: var(--cor-botao);
+        color: #fff;
+        border: none;
+        border-radius: var(--border-radius-botao);
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto var(--mb) auto;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--cor-botao-hover);
+        }
+    }
+
+    /* ----- LOGIN COM REDES SOCIAIS ----- */
+    .login-social {
+        text-align: center;
+
+        .titulo-social {
+            font-size: var(--titulo-social-tamanho);
+            color: var(--cor-texto);
+            margin-bottom: var(--margem-social-titulo);
+            font-weight: bold;
+        }
+
+        .icone-social {
+            width: var(--icone-dim);
+            height: var(--icone-dim);
+            margin: 0 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 768px) {
+    #container-login {
+        padding: var(--espacamento-container);
+
+        .container-rotulo,
+        .opcao-lembrete,
+        .botao-login,
+        .login-social {
+            margin-bottom: var(--mb);
+        }
+    }
+}

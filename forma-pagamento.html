@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - SRCARS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pagamento.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <!-- Header existente -->
+  <header>
+    <nav class="navegacao">
+        <div class="nav_icones">
+            <img src="img/logo.png" alt="logo_pagina">
+            <i class='bx bxs-help-circle' >
+                <!-- ICONE DUVIDAS -->
+            </i>
+        </div>
+        <div class="nav_opcoes">
+            <h1>Carros</h1>
+            <h1>Vender</h1>
+            <h1>Serviços</h1>
+            <h1>Ajuda</h1>
+        </div>
+        <div class="nav_icones">
+            <i class='bx bx-cart'>
+                <!-- ICONE CARRINHO MERCADo -->
+            </i>
+            <i class='bx bxs-user-circle' >
+                <!-- ICONE USUARIO -->
+            </i>
+        </div>
+    </nav>
+  </header>
+
+  <main class="payment-container">
+    <!-- Coluna de opções e totais -->
+    <section class="payment-options">
+      <h2>Forma de pagamento</h2>
+      <ul>
+        <li><input type="radio" name="payMethod" id="card" checked> <label for="card">Cartão de Crédito</label></li>
+        <li><input type="radio" name="payMethod" id="paypal"> <label for="paypal">PayPal</label></li>
+        <li><input type="radio" name="payMethod" id="boleto"> <label for="boleto">Boleto</label></li>
+        <li><input type="radio" name="payMethod" id="pix"> <label for="pix">Pix</label></li>
+      </ul>
+      <div class="location-select">
+        <label for="location">Local de entrega:</label>
+        <select id="location">
+          <option value="joinville">Joinville - SC</option>
+          <option value="florianopolis">Florianópolis - SC</option>
+          <option value="blumenau">Blumenau - SC</option>
+        </select>
+      </div>
+      <button class="btn" id="btn-save-method">Salvar</button>
+
+      <div class="totals">
+        <div class="label"><span>Frete:</span><span id="frete">R$ 200,58</span></div>
+        <div class="label"><span>Taxa:</span><span id="taxa">R$ 150,90</span></div>
+        <div class="total"><span>Total:</span><span id="total">R$ <span id="price">--,--</span></span></div>
+      </div>
+    </section>
+
+    <!-- Coluna do formulário -->
+    <section class="payment-form">
+      <h2>Dados do Cartão</h2>
+      <form id="cardForm">
+        <label for="cardNumber">Nº Cartão</label>
+        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+
+        <label for="cardHolder">Titular do Cartão</label>
+        <input type="text" id="cardHolder" placeholder="Nome impresso no cartão">
+
+        <div class="expiry">
+          <div style="flex:1">
+            <label for="expMonth">Validade (MM)</label>
+            <input type="text" id="expMonth" placeholder="MM" maxlength="2">
+          </div>
+          <div style="flex:1">
+            <label for="expYear">Validade (YYYY)</label>
+            <input type="text" id="expYear" placeholder="YYYY" maxlength="4">
+          </div>
+        </div>
+
+        <label for="cvv">Código de Segurança <small>(Últimos três dígitos)</small></label>
+        <input type="text" id="cvv" placeholder="CVV" maxlength="3">
+
+        <button type="submit" class="btn btn-primary">Salvar forma de pagamento</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Botão de compra fixo -->
+  <div style="text-align:center; margin-bottom:2rem;">
+    <a href="#" class="btn btn-primary" style="max-width:300px;">COMPRAR</a>
+  </div>
+
+  <!-- Script para cálculo de total e interações -->
+  <script src="js/payment.js"></script>
+</body>
+</html>

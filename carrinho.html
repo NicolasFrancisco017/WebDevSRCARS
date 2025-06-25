@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRCARS</title>
+  <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+  <nav class="navegacao">
+    <div class="nav_icones">
+      <img src="img/logo.png" alt="logo_pagina">
+      <i class='bx bxs-help-circle' >
+        <!-- ICONE DUVIDAS -->
+      </i>
+    </div>
+    <div class="nav_opcoes">
+      <h1>Carros</h1>
+      <h1>Vender</h1>
+      <h1>Serviços</h1>
+      <h1>Ajuda</h1>
+    </div>
+    <div class="nav_icones">
+      <i class='bx bx-cart'>
+        <!-- ICONE CARRINHO MERCADo -->
+      </i>
+      <i class='bx bxs-user-circle' >
+        <!-- ICONE USUARIO -->
+      </i>
+    </div>
+  </nav>
+  <main>
+    <div class="cart-container">
+      <h2>Carrinho de compras:</h2>
+      
+      <div class="cart-items">
+        <div class="cart-item" data-price="800000">
+          <span class="item-name">BMW M8</span>
+          <div class="quantity-control">
+            <button class="decrement">←</button>
+            <span class="quantity">1</span>
+            <button class="increment">→</button>
+          </div>
+          <span class="installment-label">À Vista</span>
+          <span class="item-price">R$ <span>800.000,00</span></span>
+          <button class="delete">🗑️</button>
+          <button class="edit">Editar</button>
+        </div>
+        <div class="cart-item" data-price="138799.42">
+          <span class="item-name">Ferrari F12 Berlinetta</span>
+          <div class="quantity-control">
+            <button class="decrement">←</button>
+            <span class="quantity">1</span>
+            <button class="increment">→</button>
+          </div>
+          <span class="installment-label">50X</span>
+          <span class="item-price">R$ <span>138.799,42</span></span>
+          <button class="delete">🗑️</button>
+          <button class="edit">Editar</button>
+        </div>
+      </div>
+      
+      <div class="total">
+        <span>TOTAL:</span>
+        <span class="total-price">R$ 938.599,42</span>
+      </div>
+      
+      <div class="actions">
+        <button class="back">←</button>
+        <button class="saved">Ver Compras Salvas</button>
+        <button class="save">Salvar Compras</button>
+        <button class="buy">COMPRAR</button>
+      </div>
+    </div>
+  </main>
+  <script src="carrinho.js"></script>
+</body>
+</html>

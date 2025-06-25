@@ -1,0 +1,145 @@
+main {
+  margin: 0;
+  padding: 0;
+  background-color: #0E2729;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 1.5vh;
+  color: #0E2729;
+}
+
+.cart-container {
+  background-color: #E1ECE9;
+  width: 80vw;
+  border-radius: 1vw;
+  padding: 2vh 2vw;
+}
+
+.cart-container h2 {
+  margin: 0 0 2vh;
+  border-bottom: 0.3vh solid #0E2729;
+  display: inline-block;
+  padding-bottom: 1vh;
+}
+
+.cart-items {
+  margin-bottom: 3vh;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 15vw 10vw 15vw 5vw 10vw;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vh 0;
+  border-bottom: 0.1vh solid #0E2729;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border: 0.1vh solid #0E2729;
+  border-radius: 0.5vw;
+  padding: 0.5vh 1vw;
+  background: #fff;
+}
+
+.quantity-control button {
+  background: none;
+  border: none;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.installment-label {
+  font-size: 1.5vh;
+  white-space: nowrap;
+}
+
+.item-price {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 1.5vh;
+}
+
+.cart-item button.delete {
+  background-color: #FF4D4F;
+  border: none;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+.cart-item button.edit {
+  background-color: #0E2729;
+  border: none;
+  border-radius: 1vw;
+  color: #fff;
+  padding: 1vh 1.5vw;
+  cursor: pointer;
+  font-size: 1.5vh;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border-top: 0.3vh solid #0E2729;
+  padding-top: 1.5vh;
+  margin-bottom: 3vh;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.actions button {
+  cursor: pointer;
+  font-size: 1.5vh;
+  border: none;
+  border-radius: 1vw;
+}
+
+.actions .back {
+  background: none;
+  border: 0.1vh solid #0E2729;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  font-size: 3vw;
+  color: #0E2729;
+}
+
+.actions .saved,
+.actions .save {
+  background-color: #0E2729;
+  color: #fff;
+  padding: 1vh 2vw;
+  white-space: nowrap;
+}
+
+.actions .buy {
+  background-color: #F3D3A0;
+  color: #0E2729;
+  padding: 2vh 4vw;
+  font-size: 2vh;
+  flex-grow: 1;
+  text-align: center;
+}

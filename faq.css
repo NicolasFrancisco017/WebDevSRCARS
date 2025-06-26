@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
 h1, h2, h3 {
     font-weight: bold;
 }
 
 main {
     width: 85vw;
-    height: 80vh;
+    height: 730px;
     background-color: aliceblue;
     margin: 2% 7.5%;
     border-radius: 25px;
@@ -61,17 +68,21 @@ main {
 
 #faq-botoes {
     display: flex;
-    gap: 420px;
+    gap: 400px;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-
+    padding-top: 40px;
+    
     & button {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
         background-color: #0b1d22;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         border-radius: 25px;
-        width: 200px;
+        width: 400px;
+        padding: 30px;
         height: 90px;
     }
 }

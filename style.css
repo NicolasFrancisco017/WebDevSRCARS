@@ -18,15 +18,12 @@ main {
 }
 
 :root {
-    /* CORES BACKGROUND*/
+
     --cor_principal: #0b1d22;
     --cor_secundaria: #1c1d24;
 
-    /* CORES FONTE */
     --cor_principal_fonte: white;
 
-    /* TAMANHO FONTES */
-    /* TAMANHO PC */
 
     --icones_medios: 40px;
     --icones_MP: 35px;
@@ -39,21 +36,29 @@ main {
 
     
 
-    /* FONTE NEGRITO */
     --negrito_medio: 600;
 
 
-    /* TAMANHO DOS DESTAQUES */
     --tam_dest: 460px;
     
-    /* animacao */
     --anim_botao: scale: 1.13; ;
 
-    /* familia fonte  */
     --fonte_carros: "Source Serif 4", serif; ;
 }
 
-/* ----- NAVEGACAO ----- */
+
+a {
+    border: none;
+    outline: none;
+    color: none;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: none;
+    }
+}
+
 
 .navegacao {
     width: 100%;
@@ -104,14 +109,12 @@ main {
 }
 
 .banner  {
-    /* teste */
     position: relative;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
 
-/* ----- BANNER ----- */
 
 .destaques {
     width: 100%;
@@ -146,7 +149,6 @@ main {
         right: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        /* background-color: rebeccapurple; */
 
         & i {
             font-size: 50px;
@@ -154,14 +156,6 @@ main {
         }
     }
 
-    /* & h2 {
-        color: white;
-        position: absolute;
-        top: 2.5%;
-        left: 2%;
-        font-size: clamp(var(--titulos_medios), 2vw, var(--titulos_grandes));
-        font-weight: var(--negrito_medio);
-    } */
 }
 
 .pesquisa {
@@ -246,7 +240,6 @@ main {
 
     width: 100%;
 
-    /* border: 1px solid red; */
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 560px));
@@ -259,7 +252,6 @@ main {
         height: 450px;
         
 
-        /* border: 1px solid blue; */
         background-color: var(--cor_secundaria);
         border-radius: 20px;
 
@@ -294,7 +286,6 @@ main {
                 display: flex;
                 align-items: end;
                 height: 100px;
-                /* border: 1px solid wheat; */
                 font-size: var(--titulos_SG);
                 font-family: var(--fonte_carros);
             }            
@@ -324,7 +315,6 @@ main {
                 display: flex;
                 width: 100%;
 
-                /* border: 1px solid wheat; */
 
                 & .local_produto{
                     width: 30%;
@@ -332,7 +322,6 @@ main {
                     display: flex;
                     align-items: center;
 
-                    /* border: 1px solid wheat; */
 
                     & i {
                         font-size: var(--icones_medios);
@@ -352,7 +341,6 @@ main {
                      
                     
                     & * {
-                        /* border: 1px solid wheat; */
                         width: 100%;
                         display: flex;
                         justify-content: end;

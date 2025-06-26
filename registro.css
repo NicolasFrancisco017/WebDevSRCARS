@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
 
-/* ----- GLOBAIS ----- */
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +10,6 @@
 }
 
 :root {
-    /* CORES */
     --cor-fundo: #f0f0f0;
     --cor-container: #e0e0e0;
     --cor-rotulo: #0b1d22;
@@ -19,7 +17,6 @@
     --cor-botao: #333;
     --cor-botao-hover: #555;
     
-    /* TAMANHOS E ESPAÇAMENTOS */
     --largura-container: 80%;
     --max-largura-container: 800px;
     --min-altura-container: 80vh;
@@ -28,8 +25,8 @@
     --box-shadow-container: 0 0 30px rgba(0, 0, 0, 0.2);
     
     --titulo-cadastro-tamanho: 48px;
-    --mb: 30px;              /* margem-bottom padrão */
-    --mb-pequeno: 10px;       /* margem-bottom pequena */
+    --mb: 30px;              
+    --mb-pequeno: 10px;       
     
     --rotulo-tamanho: 28px;
     --rotulo-max-largura: 275px;
@@ -59,7 +56,6 @@ body {
     background-size: cover;
 }
 
-/* ----- CONTAINER DE REGISTRO ----- */
 #container-registro {
     width: var(--largura-container);
     max-width: var(--max-largura-container);
@@ -79,7 +75,6 @@ a {
     color: var(--cor-container);
 }
 
-/* ----- TÍTULO DE REGISTRO ----- */
 .titulo-registro {
     text-align: center;
     color: var(--cor-texto);
@@ -87,7 +82,6 @@ a {
     margin-bottom: var(--mb);
 }
 
-/* ----- CAMPOS DO FORMULÁRIO ----- */
 .container-campo {
     margin-bottom: var(--mb);
 }
@@ -111,7 +105,6 @@ a {
     border-radius: var(--border-radius-entrada);
 }
 
-/* ----- BOTÃO DE REGISTRO ----- */
 .botao-registro {
     display: block;
     width: 100%;
@@ -132,7 +125,6 @@ a {
 }
 
 
-/* ----- REGISTRO COM REDES SOCIAIS ----- */
 .registro-social {
     text-align: center;
 }
@@ -151,7 +143,6 @@ a {
     cursor: pointer;
 }
 
-/* ----- BOTÃO "JÁ TEM LOGIN?" ----- */
 .ja-login {
     text-align: center;
 }

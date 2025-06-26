@@ -11,34 +11,32 @@
 
 </head>
 <body>
-  <!-- Header existente -->
   <header>
     <nav class="navegacao">
-        <div class="nav_icones">
-            <img src="img/logo.png" alt="logo_pagina">
-            <i class='bx bxs-help-circle' >
-                <!-- ICONE DUVIDAS -->
-            </i>
-        </div>
-        <div class="nav_opcoes">
-            <h1>Carros</h1>
-            <h1>Vender</h1>
-            <h1>Serviços</h1>
-            <h1>Ajuda</h1>
-        </div>
-        <div class="nav_icones">
-            <i class='bx bx-cart'>
-                <!-- ICONE CARRINHO MERCADo -->
-            </i>
-            <i class='bx bxs-user-circle' >
-                <!-- ICONE USUARIO -->
-            </i>
-        </div>
+      <div class="nav_icones">
+          <a href="./index.html">
+              <img src="img/logo.png" alt="logo_pagina">
+          </a>
+          
+          <a href="./faq.html"><i class='bx bxs-help-circle' >
+          </i></a>
+      </div>
+      <div class="nav_opcoes">
+          <h1><a href="./index.html">Carros</a></h1>
+          <h1><a href="./faq.html">Ajuda</a></h1>
+      </div>
+      <div class="nav_icones">
+          <a href="./carrinho.html">
+              <i class='bx bx-cart'>
+              </i>
+          </a>
+              <i class='bx bxs-user-circle' >
+          </i>
+      </div>
     </nav>
   </header>
 
   <main class="payment-container">
-    <!-- Coluna de opções e totais -->
     <section class="payment-options">
       <h2>Forma de pagamento</h2>
       <ul>
@@ -64,7 +62,6 @@
       </div>
     </section>
 
-    <!-- Coluna do formulário -->
     <section class="payment-form">
       <h2>Dados do Cartão</h2>
       <form id="cardForm">
@@ -93,12 +90,10 @@
     </section>
   </main>
 
-  <!-- Botão de compra fixo -->
   <div style="text-align:center; margin-bottom:2rem;">
-    <a href="#" class="btn btn-primary" style="max-width:300px;">COMPRAR</a>
+    <a href="./index.html" class="btn btn-primary" style="max-width:300px;">COMPRAR</a>
   </div>
 
-  <!-- Script para cálculo de total e interações -->
   <script src="js/payment.js"></script>
 </body>
 </html>

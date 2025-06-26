@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
 
-/* ----- GLOBAIS ----- */
 * {
     padding: 0;
     margin: 0;
@@ -11,15 +10,13 @@
 }
 
 :root {
-    /* ----- CORES ----- */
-    --cor-fundo: #f0f0f0;
+    --cor-fundo: #0b1d22;
     --cor-container: #e0e0e0;
     --cor-rotulo: #0b1d22;
     --cor-texto: #333;
     --cor-botao: #333;
     --cor-botao-hover: #555;
 
-    /* ----- TAMANHOS E ESPAÇAMENTOS ----- */
     --largura-container: 80%;
     --max-largura-container: 800px;
     --min-altura-container: 80vh;
@@ -63,13 +60,11 @@ body {
     background-size: cover;
 }
 
-/* ----- ESTILOS GLOBAIS DE ÂNCORA ----- */
 a {
     text-decoration: none;
     color: var(--cor-container);
 }
 
-/* ----- CONTAINER DE LOGIN ----- */
 #container-login {
     width: var(--largura-container);
     max-width: var(--max-largura-container);
@@ -83,7 +78,6 @@ a {
     flex-direction: column;
     justify-content: center;
 
-    /* ----- TÍTULO DE LOGIN ----- */
     .titulo-login {
         text-align: center;
         color: var(--cor-texto);
@@ -91,7 +85,6 @@ a {
         margin-bottom: var(--mb);
     }
 
-    /* ----- CAMPOS DO FORMULÁRIO ----- */
     .container-rotulo {
         margin-bottom: var(--mb);
 
@@ -116,7 +109,6 @@ a {
         }
     }
 
-    /* ----- OPÇÃO LEMBRETE ----- */
     .opcao-lembrete {
         display: flex;
         align-items: center;
@@ -131,7 +123,6 @@ a {
         }
     }
 
-    /* ----- BOTÃO DE LOGIN ----- */
     .botao-login {
         display: block;
         width: 100%;
@@ -151,7 +142,6 @@ a {
         }
     }
 
-    /* ----- LOGIN COM REDES SOCIAIS ----- */
     .login-social {
         text-align: center;
 
@@ -171,7 +161,6 @@ a {
     }
 }
 
-/* ----- BOTÃO "CRIAR CONTA" ----- */
 .criar-conta {
     text-align: center;
 }
@@ -195,7 +184,6 @@ a {
 }
 
 
-/* ----- RESPONSIVIDADE ----- */
 @media (max-width: 768px) {
     #container-login {
         padding: var(--espacamento-container);
